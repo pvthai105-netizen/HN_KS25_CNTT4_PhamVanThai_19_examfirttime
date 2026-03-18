@@ -3,7 +3,7 @@ const phoneInput = document.getElementById("contact-phone");
 const emailInput = document.getElementById("contact-email");
 const tbody = document.getElementById("contact-tbody");
 const submitBtn = document.querySelector(".btn-add");
-
+const nobita = document.getElementById("contact-form");
 let contacts = [
   { name: "Nguyễn Văn An", phone: "0901234567", email: "an@gmail.com" },
   { name: "Trần Thị Bình", phone: "0912345678", email: "binh@gmail.com" },
@@ -64,7 +64,7 @@ const validate = (name, phone, email) => {
   return true;
 };
 
-document.getElementById("contact-form").addEventListener("submit", (e) => {
+nobita.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (editIndex === null) {
